@@ -135,27 +135,27 @@ var SudokuSolver = function (testable) {
     }).join("\n");
   }
 
-  // if (testable) {
-  //   solver = { 
-  //     solve: solve,
-  //     solveAndPrint: solveAndPrint,
-  //     recursiveSolve: recursiveSolve,
-  //     boardIsInvalid: boardIsInvalid,
-  //     boardIsValid: boardIsValid,
-  //     boardIsSolved: boardIsSolved,
-  //     getNextCellAndPossibilities: getNextCellAndPossibilities,
-  //     getAllIntersections: getAllIntersections,
-  //     allRowsValid: allRowsValid,
-  //     getRow: getRow,
-  //     allColumnsValid: allColumnsValid,
-  //     getColumn: getColumn,
-  //     allBoxesValid: allBoxesValid,
-  //     getBox: getBox,      collectionIsValid: collectionIsValid,
-  //     toString: toString };
-  // } else {
-  //   solver = { solve: solve,
-  //     solveAndPrint: solveAndPrint };
-  // }
+  if (testable) {
+    solver = { 
+      solve: solve,
+      solveAndPrint: solveAndPrint,
+      recursiveSolve: recursiveSolve,
+      boardIsInvalid: boardIsInvalid,
+      boardIsValid: boardIsValid,
+      boardIsSolved: boardIsSolved,
+      getNextCellAndPossibilities: getNextCellAndPossibilities,
+      getAllIntersections: getAllIntersections,
+      allRowsValid: allRowsValid,
+      getRow: getRow,
+      allColumnsValid: allColumnsValid,
+      getColumn: getColumn,
+      allBoxesValid: allBoxesValid,
+      getBox: getBox,      collectionIsValid: collectionIsValid,
+      toString: toString };
+  } else {
+    solver = { solve: solve,
+      solveAndPrint: solveAndPrint };
+  }
 
   return solver;
 }(TESTABLE);
